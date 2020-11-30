@@ -8,7 +8,7 @@
     "lint": "eslint ./",
     "test": "mocha server/spec/server-spec.js --timeout 20000 --exit",
     "report": "mocha server/spec/server-spec.js --timeout 20000 --exit --sort --reporter @mochajs/json-file-reporter",
-    "submit": "node ./.travis/submit.js"
+    "submit": "codestates-submission"
   },
   "lint-staged": {
     "linters": {
@@ -19,6 +19,7 @@
     }
   },
   "dependencies": {
+    "@codestates-cc/submission-npm": "^1.1.1",
     "body-parser": "^1.9.2",
     "express": "^4.10.1",
     "morgan": "^1.4.1",
